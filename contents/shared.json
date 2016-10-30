@@ -1,0 +1,7 @@
+{
+	"site-title": "嘿哟",
+	"navbar": [
+		{"label": "他人作品", "href": "/"},
+		{"label": "个人作品", "href": "/"}
+	]
+}
