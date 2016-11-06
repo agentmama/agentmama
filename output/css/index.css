@@ -603,9 +603,24 @@ html {
 h1 {
   font-size: 5em; }
 
+.wBgWrapper {
+  height: 100%;
+  width: 100%; }
+
+.wBgInner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 header {
   background-color: #1e1e1e;
   color: #fff;
   overflow: hidden; }
+
+.vinslider .vinmain li .wBgWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; }
 
 /*# sourceMappingURL=index.css.map */
