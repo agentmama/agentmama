@@ -1,12 +1,17 @@
 {{> header }}
-	<div role="main">
+	<div class="">
 		<div class="vinslider">
 			<ul>
 			{{#mainslider}}
 				<li>
-					<img class="wBg" src="{{test-jpg}}">
-					<h2>{{title}}</h2>
-					<p>{{text}}</p>
+					<img class="wBg" src="{{img}}">
+					<aside>
+						<div class="text-wrapper">
+							<h3>{{title}}</h3>
+							<p>{{author}}</p>
+							<p>{{src}}</p>
+						</div>
+					</aside>
 				</li>
 			{{/mainslider}}
 			</ul>

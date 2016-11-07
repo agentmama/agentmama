@@ -1,9 +1,30 @@
 {
+	"id-page": "homepage",
 	"mainslider": 
 	[
-		{"src": "", "title": "titletest", "text": "text test"},
-		{"src": "", "title": "titletest", "text": "text test"},
-		{"src": "", "title": "titletest", "text": "text test"},
-		{"src": "", "title": "titletest", "text": "text test"}
+		{
+			"img": "../image/bg-seaside.jpg", 
+			"title": "黑夜给了我黑色的眼睛，我却用它来寻找光明。", 
+			"author": "浪漫主义诗人 顾城",
+			"src": ""
+		},
+		{
+			"img": "https://www.myposter.de/magazin/wp-content/uploads/2016/02/alu-dibond-fineart-glaenzend.jpg", 
+			"title": "我们的生活有这么多的障碍，真他妈的有意思，这种逻辑就叫做黑色幽默。", 
+			"author": "中国当代作家 王小波",
+			"src": ""
+		},
+		{
+			"img": "http://4hdwallpapers.com/wp-content/uploads/2013/04/Fine-Art.jpg", 
+			"title": "沉浸于黑暗的过去，无法逃避的黑色时光。然而在内心深处被黑暗吞没之处，在那样一个污浊的地方，却有着难以置信的光亮", 
+			"author": "郭敬明",
+			"src": "《最小说》"
+		},
+		{
+			"img": "../image/bg-sailing-boat.jpg", 
+			"title": "人生之路，是崎岖、蜿蜒，而漫长的，爬得越高的人，寂寞就越重，直到他爬上了巅峰，也许他才会发现巅峰上所有的，除了黄金色的声名荣誉，银白色的成功滋味外，便只有灰黑色的寂寞。", 
+			"author": "武侠小说家 古龙",
+			"src": "《护花铃》"
+		}
 	]
 }

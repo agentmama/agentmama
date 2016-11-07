@@ -1,8 +1,10 @@
 {
 	"site-title": "嘿哟",
 	"test-jpg": "http://miriadna.com/desctopwalls/images/max/Country-road.jpg",
+	"logo": "image/logo-white.png",
 	"navbar": [
 		{"label": "他人作品", "href": "/"},
-		{"label": "个人作品", "href": "/"}
+		{"label": "个人作品", "href": "/"},
+		{"label": "投稿", "href": "/"}
 	]
 }

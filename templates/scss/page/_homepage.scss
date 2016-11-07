@@ -1,11 +1,58 @@
-.vinslider {
-	.vinmain {
-		li {
-			.wBgWrapper {
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 0;
+#homepage {
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	header {
+		height: 100%;
+		margin-right: $margin-screen * 2;
+		margin-left: auto;
+
+		.logo {
+			max-width: 150px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	.vinslider {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+
+		.vinmain {
+			height: 100%;
+
+			li {
+				.wBgWrapper {
+					opacity: 0.2;
+				}
+
+				aside {
+					position: absolute;
+					left: 0;
+					top: 0;
+					color: #fff;
+					width: 100%;
+					height: 100%;
+					display: table;
+					margin-left: $margin-screen;
+					max-width: 800px;
+					width: 70%;
+
+					p {
+						margin-top: 30px;
+					}
+
+					.text-wrapper {
+						display: table-cell;
+						vertical-align: middle;
+					}
+				}
 			}
 		}
 	}

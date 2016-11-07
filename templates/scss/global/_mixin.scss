@@ -1,0 +1,10 @@
+// Button
+@mixin btn-main {
+	padding: 0px 10px;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: #fff;
+		color: $color-black;
+	}
+}

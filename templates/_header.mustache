@@ -16,12 +16,15 @@
     </head>
 
     <body>
-		<header>
-			<h1>{{site-title}}</h1>
+    	<div class="root-wrapper" id="{{id-page}}">
+			<header>
+				<div class="logo">
+					<img class="" src="{{logo}}">
+				</div>
 
-			<ul class="navbar">
-			{{#navbar}}
-				<li><a href="{{{href}}}">{{label}}</a>
-			{{/navbar}}
-			</ul>
-		</header>
+				<ul class="navbar">
+					{{#navbar}}
+					<li><a href="{{{href}}}">{{label}}</a>
+					{{/navbar}}
+				</ul>
+			</header>

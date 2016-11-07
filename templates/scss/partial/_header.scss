@@ -1,5 +1,19 @@
 header {
-	background-color: $color-black;
 	color: #fff;
-	overflow: hidden;
+	display: table;
+	position: relative;
+	z-index: 9;
+
+	ul {
+		position: fixed;
+		left: $margin-screen;
+		top: $margin-screen;
+
+		li {
+			display: inline-block;
+			margin: 0 10px;
+
+			@include btn-main;
+		}
+	}
 }

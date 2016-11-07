@@ -597,11 +597,20 @@ li > a {
   content: ">"; }
 
 html {
-  font-family: 'DIN-Regular', Helvetica, Arial, sans-serif, 'SimHei', 'STHeiti';
-  font-size: 1.05em; }
+  font-family: 'DIN-Regular', Helvetica, Arial, sans-serif, 'SimHei', 'STHeiti'; }
 
 h1 {
   font-size: 5em; }
+
+h2 {
+  font-size: 3em; }
+
+h3 {
+  font-size: 2em; }
+
+li {
+  line-height: 2;
+  font-size: 0.9em; }
 
 .wBgWrapper {
   height: 100%;
@@ -612,15 +621,66 @@ h1 {
   background-repeat: no-repeat;
   background-position: center; }
 
-header {
-  background-color: #1e1e1e;
-  color: #fff;
-  overflow: hidden; }
+.root-wrapper {
+  background-color: #141414; }
 
-.vinslider .vinmain li .wBgWrapper {
-  position: absolute;
-  top: 0;
+header {
+  color: #fff;
+  display: table;
+  position: relative;
+  z-index: 9; }
+  header ul {
+    position: fixed;
+    left: 25px;
+    top: 25px; }
+    header ul li {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 0px 10px;
+      border-radius: 3px; }
+      header ul li:hover {
+        background-color: #fff;
+        color: #141414; }
+
+#homepage {
+  height: 100%;
+  position: fixed;
+  width: 100%;
   left: 0;
-  z-index: 0; }
+  top: 0; }
+  #homepage header {
+    height: 100%;
+    margin-right: 50px;
+    margin-left: auto; }
+    #homepage header .logo {
+      max-width: 150px;
+      display: table-cell;
+      vertical-align: middle; }
+  #homepage .vinslider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    #homepage .vinslider .vinmain {
+      height: 100%; }
+      #homepage .vinslider .vinmain li .wBgWrapper {
+        opacity: 0.2; }
+      #homepage .vinslider .vinmain li aside {
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        display: table;
+        margin-left: 25px;
+        max-width: 800px;
+        width: 70%; }
+        #homepage .vinslider .vinmain li aside p {
+          margin-top: 30px; }
+        #homepage .vinslider .vinmain li aside .text-wrapper {
+          display: table-cell;
+          vertical-align: middle; }
 
 /*# sourceMappingURL=index.css.map */
