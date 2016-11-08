@@ -1,7 +1,6 @@
 var custom = {
 	init: function() {
 		// Meta
-		this.curPage = window.location.href.split('.')[0].split('/')[window.location.href.split('.')[0].split('/').length-1];
 
 		wjs.imgBg();
 		this.slider();
@@ -19,7 +18,7 @@ var custom = {
 	headerController: function() {
 		var menu = document.getElementsByTagName('header')[0].querySelector('ul').children;
 		for (var i=0; i<menu.length; i++) {
-			if (menu[i].children[0].className.indexOf(this.curPage) >= 0 && this.curPage !== '') {
+			if (window.location.href.indexOf(menu[i].children[0].className) >= 0 && this.curPage !== '') {
 				wjs.addClass(menu[i].children[0], 'active');
 			}
 		}
