@@ -1,19 +1,44 @@
 header {
-	color: #fff;
 	display: table;
-	position: relative;
+	position: fixed;
 	z-index: 9;
+	height: 100%;
+	right: 0;
+	top: 0;
+
+	.logo {
+		max-width: 175px;
+		display: table-cell;
+		background-image: url(../image/bg-seaside.jpg);
+		padding: $margin-screen;
+		vertical-align: middle;
+		position: relative;
+		z-index: 2;
+
+		img {
+			@include transition(opacity, 0.5s);
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
 
 	ul {
 		position: fixed;
-		left: $margin-screen;
-		top: $margin-screen;
+		left: 0;
+		top: 0;
+		padding: $margin-screen / 2 $margin-screen;
+		background-color: #fff;
+		width: 100%;
 
 		li {
 			display: inline-block;
-			margin: 0 10px;
+			margin-right: 10px;
 
-			@include btn-main;
+			a {
+				@include btn-main;
+			}
 		}
 	}
 }

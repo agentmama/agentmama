@@ -1,2 +1,3 @@
-templates/.sass-cache
+templates/.sass-cache/
+.sass-cache/
 .DS_Store

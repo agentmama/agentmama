@@ -1,20 +1,18 @@
 {{> header }}
-	<div class="">
-		<div class="vinslider">
-			<ul>
-			{{#mainslider}}
-				<li>
-					<img class="wBg" src="{{img}}">
-					<aside>
-						<div class="text-wrapper">
-							<h3>{{title}}</h3>
-							<p>{{author}}</p>
-							<p>{{src}}</p>
-						</div>
-					</aside>
-				</li>
-			{{/mainslider}}
-			</ul>
-		</div>
+	<div class="vinslider">
+		<ul>
+		{{#mainslider}}
+			<li>
+				<img class="wBg" src="{{img}}">
+				<aside>
+					<div class="text-wrapper">
+						<h4>{{title}}</h4>
+						<p>{{author}}</p>
+						<p>{{src}}</p>
+					</div>
+				</aside>
+			</li>
+		{{/mainslider}}
+		</ul>
 	</div>
 {{> footer }}

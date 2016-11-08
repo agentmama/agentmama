@@ -2,6 +2,12 @@ html {
 	font-family: 'DIN-Regular', Helvetica, Arial, sans-serif, 'SimHei', 'STHeiti';
 }
 
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0;
+	line-height: 1.5;
+
+}
+
 h1 {
 	font-size: 5em;
 }
@@ -12,6 +18,18 @@ h2 {
 
 h3 {
 	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+p {
+
 }
 
 li {

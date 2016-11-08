@@ -14,5 +14,10 @@
 // Container
 
 .root-wrapper {
-	background-color: $color-black;
+	padding-top: 75px;
+	padding-left: $margin-screen;
+}
+
+.inner-wrapper {
+	max-width: 900px;
 }

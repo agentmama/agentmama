@@ -535,7 +535,7 @@ li > a {
   overflow: hidden;
   position: relative; }
 
-.clearfix:after {
+.clearfix:after, .posts:after {
   content: "";
   display: table;
   clear: both; }
@@ -599,6 +599,10 @@ li > a {
 html {
   font-family: 'DIN-Regular', Helvetica, Arial, sans-serif, 'SimHei', 'STHeiti'; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.5em 0;
+  line-height: 1.5; }
+
 h1 {
   font-size: 5em; }
 
@@ -607,6 +611,12 @@ h2 {
 
 h3 {
   font-size: 2em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.2em; }
 
 li {
   line-height: 2;
@@ -622,40 +632,74 @@ li {
   background-position: center; }
 
 .root-wrapper {
-  background-color: #141414; }
+  padding-top: 75px;
+  padding-left: 20px; }
+
+.inner-wrapper {
+  max-width: 900px; }
 
 header {
-  color: #fff;
   display: table;
-  position: relative;
-  z-index: 9; }
+  position: fixed;
+  z-index: 9;
+  height: 100%;
+  right: 0;
+  top: 0; }
+  header .logo {
+    max-width: 175px;
+    display: table-cell;
+    background-image: url(../image/bg-seaside.jpg);
+    padding: 20px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2; }
+    header .logo img {
+      -webkit-transition: opacity, 0.5s, ease-in-out;
+      -moz-transition: opacity, 0.5s, ease-in-out;
+      -o-transition: opacity, 0.5s, ease-in-out;
+      -ms-transition: opacity, 0.5s, ease-in-out;
+      transition: opacity, 0.5s, ease-in-out; }
+      header .logo img:hover {
+        opacity: 0.5; }
   header ul {
     position: fixed;
-    left: 25px;
-    top: 25px; }
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 100%; }
     header ul li {
       display: inline-block;
-      margin: 0 10px;
-      padding: 0px 10px;
-      border-radius: 3px; }
-      header ul li:hover {
-        background-color: #fff;
-        color: #141414; }
+      margin-right: 10px; }
+      header ul li a {
+        padding: 0px 10px;
+        border-radius: 3px; }
+        header ul li a.active, header ul li a:hover {
+          background-color: #141414;
+          color: #fff; }
 
 #homepage {
   height: 100%;
   position: fixed;
   width: 100%;
   left: 0;
-  top: 0; }
+  top: 0;
+  background-color: #000;
+  max-width: 100%; }
   #homepage header {
-    height: 100%;
-    margin-right: 50px;
-    margin-left: auto; }
+    color: #fff; }
     #homepage header .logo {
-      max-width: 150px;
-      display: table-cell;
-      vertical-align: middle; }
+      background: transparent; }
+    #homepage header ul {
+      background: transparent; }
+      #homepage header ul li a:hover {
+        background-color: #fff;
+        color: #141414; }
+  #homepage footer {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 0.8em; }
   #homepage .vinslider {
     position: absolute;
     left: 0;
@@ -674,13 +718,41 @@ header {
         width: 100%;
         height: 100%;
         display: table;
-        margin-left: 25px;
+        margin-left: 20px;
         max-width: 800px;
         width: 70%; }
+        #homepage .vinslider .vinmain li aside h4 {
+          margin-bottom: 15px; }
         #homepage .vinslider .vinmain li aside p {
-          margin-top: 30px; }
+          font-size: 0.8em; }
         #homepage .vinslider .vinmain li aside .text-wrapper {
           display: table-cell;
           vertical-align: middle; }
+    #homepage .vinslider .vinpager {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      text-align: center; }
+      #homepage .vinslider .vinpager li {
+        margin: 0 5px;
+        width: 6px;
+        height: 6px;
+        background-color: #505050;
+        opacity: 0.6;
+        border: none; }
+        #homepage .vinslider .vinpager li.vinactive {
+          background-color: #fff; }
+
+.posts {
+  margin-bottom: 25px; }
+  .posts .img-wrapper {
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+    height: 150px; }
+  .posts aside {
+    float: left;
+    width: 78%; }
 
 /*# sourceMappingURL=index.css.map */

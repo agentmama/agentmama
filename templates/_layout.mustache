@@ -1,6 +1,15 @@
 {{> header }}
-	<div role="main">
-
+	<div class="inner-wrapper">
+		{{# posts}}
+		<div class="posts">
+			<div class="img-wrapper">			
+				<img class="wBg" src="{{test-jpg}}">
+			</div>
+			<aside>
+				<h4>{{title}}</h4>
+				<p>{{text}}</p>
+			</aside>
+		</div>
+		{{/ posts}}
 	</div>
 {{> footer }}
-

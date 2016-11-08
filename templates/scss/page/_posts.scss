@@ -1,0 +1,16 @@
+.posts {
+	margin-bottom: 25px;
+	@extend .clearfix;
+
+	.img-wrapper {
+		float: left;
+		width: 20%;
+		margin-right: 2%;
+		height: 150px;
+	}
+
+	aside {
+		float: left;
+		width: 78%;
+	}
+}

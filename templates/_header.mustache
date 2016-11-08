@@ -18,13 +18,13 @@
     <body>
     	<div class="root-wrapper" id="{{id-page}}">
 			<header>
-				<div class="logo">
+				<a href="/" class="logo">
 					<img class="" src="{{logo}}">
-				</div>
+				</a>
 
 				<ul class="navbar">
 					{{#navbar}}
-					<li><a href="{{{href}}}">{{label}}</a>
+					<li><a class="{{href}}" href="{{href}}.html">{{label}}</a>
 					{{/navbar}}
 				</ul>
 			</header>
